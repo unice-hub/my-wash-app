@@ -62,6 +62,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: 700, // height of the container
+        // width: 300,
         color: const Color.fromARGB(255, 149, 201, 243), // background color here
         child: Padding(
           padding: const EdgeInsets.all(32.0),  //adjust space btn the container and the tabbar view
@@ -154,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   }),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 40),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -167,9 +169,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         );
                       },
+                  
                       child: Container(
                         width: 150.0,
-                        height: 100.0,
+                        height: 120.0,
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -202,7 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       child: Container(
                         width: 150.0,
-                        height: 100.0,
+                        height: 120.0,
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
@@ -240,7 +243,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       child: Container(
                         width: 150.0,
-                        height: 100.0,
+                        height: 120.0,
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
