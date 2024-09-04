@@ -65,9 +65,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Kutunza%20Mazingira%20na%20Ubongo%20Kids%20_%20Siku%20Ya%20Mazingira%20Duniani.mp4?alt=media&token=3b6c1059-07e4-4c43-a37c-f0fa9aeca81a',
     );
 
-    _animatedController2 = VideoPlayerController.network(
-      'https://example.com/animated_video_2.mp4',
-    );
+    // _animatedController2 = VideoPlayerController.network(
+    //   '',
+    // );
 
     _initializeVideoPlayerFuture1 = _controller1.initialize();
     _initializeVideoPlayerFuture2 = _controller2.initialize();
@@ -283,14 +283,14 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               title: const Text('Videos'),
               children: [
                 _buildVideoPlayer(0,' Introduction to Hygiene' ,
-                    'Description of  introduction to hygiene'),
+                    ''),
                 Container(
                     height: 10,
                     color: Colors
                         .black), // Adjust the height value as needed for spacing
 
                 _buildVideoPlayer(1,'WASH to public healthy',
-                    'Description of WASH to public healthy'),
+                    ''),
                 Container(
                     height: 10,
                     color: Colors
@@ -299,7 +299,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 _buildVideoPlayer(
                     2,
                     'Behavior analysis to improve WASH practices',
-                    'Description of Impact of WASH on behavior'),
+                    ''),
                 Container(height: 10, color: Colors.black),
               ],
             ),
@@ -326,11 +326,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               title: const Text('Animated Videos'),
               children: [
                 _buildVideoPlayer(
-                    3, 'Description of Animated Video 1', 'Animated Video 1'),
+                    3, 'Akili and friends cleaning environment', ''),
                 Container(height: 10, color: Colors.black),
-                _buildVideoPlayer(
-                    4, 'Description of Animated Video 2', 'Animated Video 2'),
-                Container(height: 10, color: Colors.black),
+                // _buildVideoPlayer(
+                //     4, '', 'Animated Video 2'),
+                // Container(height: 10, color: Colors.black),
               ],
             ),
           ],

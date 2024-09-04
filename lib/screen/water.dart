@@ -61,11 +61,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     );
 
     _animatedController1 = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Kutunza%20Mazingira%20na%20Ubongo%20Kids%20_%20Siku%20Ya%20Mazingira%20Duniani.mp4?alt=media&token=3b6c1059-07e4-4c43-a37c-f0fa9aeca81a',
+      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Water%20Sanitation%20and%20Hygiene%20-%20WASH%20in%20Public%20Health.mp4?alt=media&token=ae061139-f167-4a1c-9043-1e8470f6d366',
     );
 
     _animatedController2 = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Life%20Without%20Clean%20Water.mp4?alt=media&token=d3d18f01-6ee7-4fbd-8df3-2fdc28736933',
+      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/knowledge%20about%20water%20pollution.mp4?alt=media&token=7fecd38a-3c94-4e5d-a6b0-eb613dfac3f2',
     );
 
     _initializeVideoPlayerFuture1 = _controller1.initialize();
@@ -284,14 +284,14 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               title: const Text('Videos'),
               children: [
                 _buildVideoPlayer(0, 'Introduction to WASH',
-                'Description of WASH introduction'
+                ''
                     ),
                 Container(height: 10, color: Colors.black),
                 _buildVideoPlayer(1, 'Clean water and sanitation',
-                    'Description of Access to clean water'),
+                    ''),
                 Container(height: 10, color: Colors.black),
                 _buildVideoPlayer(2,'Contribution of WASH to healthy communities' ,
-                    'Description of Contribution of WASH'),
+                    ''),
                 Container(height: 10, color: Colors.black),
               ],
             ),
@@ -318,10 +318,10 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               title: const Text('Animated Videos'),
               children: [
                 _buildVideoPlayer(
-                    3, 'Description of Animated Video 1', 'Animated Video 1'),
+                    3, 'WASH in public health', ''),
                 Container(height: 10, color: Colors.black),
                 _buildVideoPlayer(
-                    4, 'Description of Animated Video 2', 'Animated Video 2'),
+                    4, 'Knowledge on water pollution ', ''),
                 Container(height: 10, color: Colors.black),
               ],
             ),

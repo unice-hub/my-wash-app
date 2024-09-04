@@ -57,15 +57,15 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     );
 
     _controller3 = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Sanitation%20-%20Definition%20of%20sanitation%20%F0%9F%93%96.mp4?alt=media&token=c40f975d-a328-47fa-90e4-b6fcf2d140a4',
+      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Community%20Engagement%20in%20WASH%20(Water%2C%20Sanitation%20%26%20Hygiene)%20%E2%80%93%20how%20it%20works%20in%20practice.(1).mp4?alt=media&token=8b44654a-490a-44fc-b43e-b40de678e322',
     );
 
     _animatedController1 = VideoPlayerController.network(
-      'https://example.com/animated_video_1.mp4',
+      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Water%2C%20sanitation%20%26%20Hygiene%20during%20emergencies.mp4?alt=media&token=332bbe45-fbda-4968-9fee-6d9e7cf8cbd8',
     );
 
     _animatedController2 = VideoPlayerController.network(
-      'https://example.com/animated_video_2.mp4',
+      'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Environment%20Sanitation%20Animation.mp4?alt=media&token=a2b83d10-bc32-4212-9de5-220c2cb1e341',
     );
 
     _initializeVideoPlayerFuture1 = _controller1.initialize();
@@ -286,7 +286,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 _buildVideoPlayer(
                     0,
                     ' Introduction to sanitation',
-                    'Description of  introduction to sanitation'),
+                    ''),
                 Container(
                     height: 10,
                     color: Colors
@@ -295,7 +295,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 _buildVideoPlayer(
                     1,
                     'Understanding goals to clean water and sanitation',
-                    'Description of  Importance of WASH at schools'),
+                    ''),
                 Container(
                     height: 10,
                     color: Colors
@@ -304,7 +304,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 _buildVideoPlayer(
                     2,
                     'Behavior analysis to improve WASH practices',
-                    'Description of Impact of WASH on behavior'),
+                    ''),
                 Container(height: 10, color: Colors.black),
               ],
             ),
@@ -331,10 +331,10 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               title: const Text('Animated Videos'),
               children: [
                 _buildVideoPlayer(
-                    3, 'Description of Animated Video 1', 'Animated Video 1'),
+                    3, 'WASH knowledge during emergencies', ''),
                 Container(height: 10, color: Colors.black),
                 _buildVideoPlayer(
-                    4, 'Description of Animated Video 2', 'Animated Video 2'),
+                    4, 'Environment sanitation', ''),
                 Container(height: 10, color: Colors.black),
               ],
             ),
