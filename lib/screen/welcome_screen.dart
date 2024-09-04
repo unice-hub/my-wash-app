@@ -52,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     alignment: Alignment.topCenter,
                     heightFactor: MediaQuery.of(context).size.height < 600
                         ? 0.3
-                        : 0.5, // Adjusting heightFactor based on screen size
+                        : 0.6, // Adjusting heightFactor based on screen size
                     child: LayoutBuilder(
                       builder: (context, constraints) {
                         return SizedBox(
@@ -89,7 +89,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 children: <Widget>[
                   FractionallySizedBox(
                     alignment: Alignment.topCenter,
-                    heightFactor: 0.5,
+                    heightFactor: 0.6,
                     child: Image.asset(
                       'assets/images/world-clean-up-day.jpg',
                       fit: BoxFit.cover,
@@ -118,7 +118,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 children: <Widget>[
                   FractionallySizedBox(
                     alignment: Alignment.topCenter,
-                    heightFactor: 0.5,
+                    heightFactor: 0.6,
                     child: Image.asset(
                       'assets/images/handwash.jpg',
                       fit: BoxFit.cover,
