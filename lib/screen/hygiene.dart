@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 // ignore: depend_on_referenced_packages
 import 'package:video_player/video_player.dart';
-
 import 'Wash_App.dart';
-
-
 
 void main() => runApp(const Hygiene());
 
