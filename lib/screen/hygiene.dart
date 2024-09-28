@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 // ignore: depend_on_referenced_packages
 import 'package:video_player/video_player.dart';
+
 import 'Wash_App.dart';
 
 void main() => runApp(const Hygiene());
@@ -62,9 +63,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       'https://firebasestorage.googleapis.com/v0/b/flutter-application-c92ae.appspot.com/o/Kutunza%20Mazingira%20na%20Ubongo%20Kids%20_%20Siku%20Ya%20Mazingira%20Duniani.mp4?alt=media&token=3b6c1059-07e4-4c43-a37c-f0fa9aeca81a',
     );
 
-    // _animatedController2 = VideoPlayerController.network(
-    //   '',
-    // );
+    _animatedController2 = VideoPlayerController.network(
+      '',
+    );
 
     _initializeVideoPlayerFuture1 = _controller1.initialize();
     _initializeVideoPlayerFuture2 = _controller2.initialize();
